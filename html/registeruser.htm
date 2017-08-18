@@ -1,0 +1,678 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Realopportunity.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div class="meta">
+		<div class="metalinks">
+			<a href="#"><img src="images/meta1.gif" alt="" width="15" height="14" /></a>
+			<a href="#"><img src="images/meta2.gif" alt="" width="17" height="14" /></a>
+			
+			<a href="#"><img src="images/meta4.gif" alt="" width="15" height="14" /></a>
+		</div>
+		<p>Recruiters: <a href="#">Log in</a> or <a href="#">Register.</a></p>																																															<div class="inner_copy"><a href="http://www.greatdirectories.org/">web directories</a><a href="http://www.bestfreetemplates.info/">free CSS templates</a></div>
+	</div>
+	<div id="header">
+		<a href="index.html" class="logo"><img src="images/logo.jpeg" alt="setalpm" width="149" height="28" /></a>
+		<span class="slogan">Your Key to Success</span>
+		<ul id="menu">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+		<img src="images/bigpicture.jpg" alt="" width="892" height="303" />
+	</div>
+	<div id="content">
+   
+<style type="text/css">
+h3{font-family: Calibri; font-size: 22pt; font-style: normal; font-weight: bold; color:#B5E61D;
+text-align: center; text-decoration: underline; background-color:#000}
+table{font-family: Calibri; color:#000; font-size: 11pt; font-style: normal;
+text-align:; background-color: #FFF; border-collapse: collapse; border: 2px solid black}
+table.inner{border: 0px}
+
+tr{ padding-bottom: 10em;}
+</style>
+<script language="javascript">
+
+function checkdata()
+{
+	
+var x=document.forms["userreg"]["txtemp_eid"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+
+	//alert('hello1');
+	//if(reg_form.middle_name.value=="") 
+	
+	if(document.userreg.txtemp_eid.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('eid_valid').style.display='block';
+		//return false;
+	}
+	else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+	{
+	document.getElementById('eid_valid').style.display='block';
+	document.getElementById('email_error').style.display='block';
+	//return false;
+	}
+	if(document.userreg.txtepass.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('pass_valid').style.display='block';
+	//	return false;
+	}
+	if(document.userreg.txtpass.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('cpass_valid').style.display='block';
+	//	return false;
+	}
+	if(document.userreg.txtefname.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('fname_valid').style.display='block';
+	//	return false;
+	}
+	if(document.userreg.txtelname.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('lname_valid').style.display='block';
+	//return false;
+	}
+	if(document.userreg.dobday.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('age_valid').style.display='block';
+	//	return false;
+	}
+	if(document.userreg.txtmono.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('mono_valid').style.display='block';
+	//	return false;
+	}
+	if(document.userreg.Gender.checked==false)
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('gender_valid').style.display='block';
+//	return false;
+	}
+	if(document.userreg.Address.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('add_valid').style.display='block';
+//		return false;
+	}
+	if(document.userreg.txtcity.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('city_valid').style.display='block';
+//		return false;
+	}
+	if(document.userreg.txtpcode.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('pcode_valid').style.display='block';
+//		return false;
+	}
+	else if(isDigits(userreg.txtpcode.value)==false) {
+		document.getElementById('numeric').style.display='block';
+//		return false;
+		document.getElementById('pincode_error').style.display='block';
+	}
+	
+	if(document.userreg.txtstate.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('state_valid').style.display='block';
+//		return false;
+	}
+	if(document.userreg.txtgboard.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('gb_valid').style.display='block';
+//		return false;
+	}
+	if(document.userreg.txtgper.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('gper_valid').style.display='block';
+//		return false;
+	}
+	if(document.userreg.txtgyear.value=="")
+	{
+		
+		document.getElementById('missing').style.display='block';
+		document.getElementById('gyear_valid').style.display='block';
+//		return false;
+	}
+	if(document.comregister.txtepass.value!=document.comregister.txtpass.value)
+	{
+		
+		document.getElementById('pass_error').style.display='block';
+//		return false;
+		
+	}
+	else
+	{
+//	document.comregister.action="companyregister.php";
+	}
+	
+}
+</script>
+
+<center>
+<h1>EMPLOYEE REGISTRATION FORM</h1>
+
+<form name="userreg"  method="POST" action="javascript:void()">
+
+<table align="center"cellspacing="5" border="0">
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="3"><h3><u>Create Account</h3></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="txtemp_eid" maxlength="100" /></td>
+<td><div id="eid_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>ENTER PASSWORD</td>
+<td><input type="password" name="txtepass" maxlength="100" /></td>
+<td><div id="pass_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>CONFIRM PASSWORD</td>
+<td><input type="password" name="txtpass" maxlength="100" /></td>
+<td><div id="cpass_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="3"><h3><u>Contact Details</h3></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="txtefname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+<td><div id="fname_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="txtelname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+<td><div id="lname_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Age.</td>
+
+<td><input type="text" name="dobday">
+<td><div id="age_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</td>
+</tr>
+
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="txtmono" maxlength="10" />
+(10 digit number)
+</td>
+<td><div id="mono_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+<td><div id="gender_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+<td><div id="add_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>CITY</td>
+<td><input type="text" name="txtcity" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+<td><div id="city_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="txtpcode" maxlength="6" />
+(6 digit number)
+</td>
+<td><div id="pcode_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>STATE</td>
+<td><input type="text" name="txtstate" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+<td><div id="state_valid" style="display:none"> <span class="style88"> *</span></div></td>
+</tr>
+
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="txtcountry" value="India" readonly /></td>
+<td>&nbsp;</td>
+</tr>
+
+<!----- Hobbies ---------------------------------------------------------->
+
+<!----- Qualification---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="3"><h3><u>Qualification</h3></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+
+<td>
+<table class="inner">
+
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Course</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+
+</tr>
+
+<tr>
+<td>1</td>
+<td>Graduation.</td>
+<td><input type="text" name="txtgboard" maxlength="30" /></td>
+
+<td><input type="text" name="txtgper" maxlength="30" /></td>
+
+<td><input type="text" name="txtgyear" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Post Graduaion</td>
+<td><input type="text" name="txtpboard" maxlength="30" /></td>
+<td><input type="text" name="txtpper" maxlength="30" /></td>
+<td><input type="text" name="txtpyear" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Other</td>
+<td><input type="text" name="txtoboard" maxlength="30" /></td>
+<td><input type="text" name="txtoper" maxlength="30" /></td>
+<td><input type="text" name="txtoyear" maxlength="30" /></td>
+</tr>
+
+
+
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+<tr>
+<td>&nbsp;
+
+</td>
+<td>&nbsp;
+
+</td>
+
+<td align="center"><div id="gb_valid" style="display:none"> <span class="style88">*</span></div></td>
+<td align="center"><div id="gper_valid" style="display:none"> <span class="style88">*</span></div></td>
+<td align="center"><div id="gyear_valid" style="display:none"> <span class="style88">*</span></div></td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<!----- Course ---------------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="3"><h3><u>Current Profesional Details.</h3></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+Total Experience
+</td>
+<td><select name="exp" id="exp">
+<option value="-1">Years:</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="5+">5+</option>
+<option value="10+">10+</option>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Key Skill</td>
+<td><textarea name="txtkey" rows="4" cols="30"></textarea></td><td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<td>Current Industries</td>
+<td><input type="text" name="txtcurindus">
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<td>Functional Area</td>
+<td><input type="text" name="txtfunarea">
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="3"><h3><u>Account Recovery Details.</h3></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+Total Experience
+</td>
+<td><select name="sqs" id="sqs">
+<option value="-1">Select Security Question</option>
+<option value="0">What was your childhood nickname? </option>
+<option value="1">What is the name of the company of your first job?</option>
+<option value="2">What are the last 5 digits of your credit card?</option>
+<option value="3">What is your current car registration number?</option>
+<option value="4">What is the last name of your favorite high school teacher?</option></select></td><td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Answer</td>
+<td><textarea name="txtsans" rows="4" cols="30"></textarea></td><td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<!----missing div-->
+<tr>
+<td align="center"><div  id="missing" style="display:none">
+  <table width="200" border="0" align="center">
+    <tr>
+      <td colspan="2" align="center"><span class="style88">* Missing field(s) </span></td>
+    </tr>
+  </table>
+  </div>
+  </td>
+</tr>
+<tr>
+<td colspan="3">
+<div  id="email_error" style="display:none">
+ 
+    
+     <span>* Not a valid email address </span>
+    
+  
+  </div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<div  id="pass_error" style="display:none">
+ 
+    
+     <span>@ Passwords do not match </span>
+    
+  
+  </div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+  <div  id="pincode_error" style="display:none">
+  <span class="style88">* Please check pincode length</span>
+  </div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+  <div  id="numeric" style="display:none">
+  <span class="style88">* Pincode must be a Numeric</span>
+  </div>
+</td>
+</tr>
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit" onClick="checkdata()">
+<input type="reset" value="Reset">
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+</table>
+
+</form>
+
+
+</center>
+
+    </div>
+    
+	 <div id="footer">
+            <center>
+            <a href="index.php">HOME</a> | <a href="aboutus.php">AOUT US</a> | <a href="contactus.php">CONTACT US</a>
+             
+            </center>
+            
+    All rights reserved © 2012 RealOpportunity.com
+    </div> 
+</body>
+</html>
